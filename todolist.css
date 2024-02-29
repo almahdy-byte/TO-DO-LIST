@@ -1,0 +1,128 @@
+:root {
+    --color1: rgb(0, 47, 255);
+}
+
+@media (max-width:750px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .task_input_field {
+        width: 80%;
+    }
+    .tasks {
+        width: 80%;
+    }
+}
+
+@media (min-width:1024px) {
+    .task_input_field {
+        width: 50%;
+    }
+    .tasks {
+        width: 50%;
+    }
+}
+
+@media (min-width:768px)and (max-width:1023px) {
+    .task_input_field {
+        width: 65%;
+    }
+    .tasks {
+        width: 65%;
+    }
+}
+
+.logo .land {
+    margin: 50px 50px 20px 50px;
+}
+h1 {
+    font-size: 3.5em;
+    font-family: monospace;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: #1b1b1b;
+text-shadow: 0px 0px 6px #ffffff;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0 10px;
+    padding: 0;
+    background-color: #151320;
+}
+
+.container .task_input_field {
+    margin: 50px;
+    position: relative;
+
+}
+
+.container .task_input_field input {
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    font-family: cursive;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.container .task_input_field input:focus
+{
+    outline: none;
+}
+
+.container .task_input_field button {
+    aspect-ratio: 1;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color1);
+    border-radius: 50px;
+    color: white;
+    border: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(-10%, 10%);
+}
+
+.task_area {
+    display: flex;
+    width: 80%;
+    background-color: #151320;
+    min-height: 60px;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+    margin: 5px 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+span {
+    border: 1px solid black;
+    background-image: linear-gradient(100deg, rgb(48, 5, 49), rgb(0, 0, 0));
+    border-radius: 9px;
+    transition: .3s;
+}
+
+span:hover {
+    cursor: pointer;
+    background-image: linear-gradient(100deg, rgb(0, 0, 0), rgb(48, 5, 49));
+    font-size: 20px;
+}
+
+.tasks {
+    box-shadow: 10px 10px 125px;
+    border-radius: 16px;
+    background: black;
+    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+}
