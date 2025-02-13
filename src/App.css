@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todowrapper
+{
+    background: #1A1A40;
+      margin-top: 5rem;
+      padding: 2rem;
+      border-radius: 5px;
+}
+.todowrapper h1
+{
+  color: white;
+}
+.todoform
+{
+margin: 50px 0 ;
+  background-color: #ffffff00;
+}
+.todoform input
+{
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+.todoform input::placeholder
+{
+  color: rgba(255, 255, 255, 0.379);
+}
+.todoform .btn
+{
+  background-color: #8758ff;
+  color: white;
+}
+.todo
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8758ff;
+  color: white;
+  text-align: start;
+  padding:0 10px;
+  margin: 10px 0 ;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.edit-icon
+{
+  margin: 0 5px;
+}
